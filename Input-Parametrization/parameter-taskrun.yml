@@ -1,0 +1,10 @@
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: echo-task-run-with-parameter
+spec:
+  taskRef:
+    name: echo-task-with-input
+  params:
+    - name: input-message
+      value: "Hello fellow people!"

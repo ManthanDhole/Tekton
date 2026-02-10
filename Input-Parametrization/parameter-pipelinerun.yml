@@ -1,0 +1,7 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: example-pipeline-run-with-input
+spec:
+  pipelineRef:
+    name: example-pipeline-with-input
